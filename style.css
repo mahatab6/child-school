@@ -134,5 +134,171 @@
  .hero-content{
     text-align: center
  }
- 
+
 }
+
+
+/* Standard-Curriculum */
+
+.Curriculum{
+    background-image: url("./image/bg.png");
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Curriculum h3{
+    padding-top: 60px;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    gap: 25px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+ 
+.cards-wh{
+    width: 366px;
+    height: 476px;
+
+}
+.cards-1{
+    justify-items: center;
+    padding: 0px 40px;
+    background-color: rgba(255, 255, 255, 1); 
+    background-image: linear-gradient(180deg, #DEF5FF, #FFFFFF);
+    border-radius: 15px;
+}
+
+.cards-1 img{
+    padding-top: 52px;
+}
+
+.cards-1 h3{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cards-1 p{
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cards-1 button{
+    color: rgba(100, 200, 255, 1);
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 33px;
+    padding-bottom: 52px;
+    
+}
+.cards-1{
+    justify-items: center;
+    padding: 0px 40px;
+    background-color: rgba(255, 255, 255, 1); 
+    background-image: linear-gradient(180deg, #DEF5FF, #FFFFFF);
+    border-radius: 15px;
+}
+
+.cards-2 img{
+    padding-top: 52px;
+}
+
+.cards-2 h3{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cards-2 p{
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cards-2 button{
+    color: rgba(240, 170, 0, 1);
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 33px;
+    padding-bottom: 52px;
+    
+}
+.cards-2{
+    justify-items: center;
+    padding: 0px 40px;
+    background-color: rgba(255, 255, 255, 1); 
+    background-image: linear-gradient(180deg, #FFF4DC, #FFFFFF);
+    border-radius: 15px;
+}
+
+.cards-3 img{
+    padding-top: 52px;
+}
+
+.cards-3 h3{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cards-3 p{
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cards-3 button{
+    color: rgba(135, 0, 255, 1);
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 33px;
+    padding-bottom: 52px;
+    
+}
+
+.cards-3{
+    justify-items: center;
+    padding: 0px 40px;
+    background-color: #F2E8FF; 
+    background-image: linear-gradient(180deg, #F2E8FF, #FFFFFF);
+    border-radius: 15px;
+}
+
+.than-btn{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.than-btn button{
+    border-radius: 50%;
+    padding: 20px;
+    background-color: orange;
+    border: none;
+    color: #F2E8FF;
+}
+
+
+/* responsive Standard Curriculum */
+
+@media screen and (max-width: 500px) {
+    .Curriculum h3{
+        font-size: 2rem;
+
+    }
+    .cards{
+        flex-direction: column
+
+    }
+    .than-btn{
+        display: none;
+    }
+   }
+
