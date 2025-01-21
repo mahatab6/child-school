@@ -24,6 +24,10 @@
     color: rgba(93, 88, 239, 1);
 }
 
+.color-5{
+    color: rgba(255, 255, 255, 1);
+}
+
 /* header-section */
 
 .nav-section{
@@ -321,9 +325,6 @@
     padding-top: 60px;
 }
 
-.our-stories{
-    display: ;
-}
 .story-1{
     width: 540px;
     height: 630px;
@@ -415,4 +416,42 @@
     }
     
 }
+
+/* footer-section */
+
+.foot-sec{
+    background-color: #273c75;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 140px;
+}
+
+.logo-kids{
+    display: flex;
+}
+
+.foot-sec p{
+    width: 357px;
+}
+
+.foot-sec li{
+    padding-top: 10px;
+    list-style: none;
+}
+.foot-sec img{
+    padding-top: 10px;
+}
+
+/* responsive-footer */
+
+@media screen and (max-width:500px) {
+    .foot-sec{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+}
+
 
