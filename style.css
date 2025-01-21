@@ -74,6 +74,10 @@
 #nav-hr{
     background-color: orange;
 }
+.marquee{
+    font-size: larger;
+    font-weight: bolder;
+}
 
 /* responsive nav section*/
 
@@ -333,12 +337,16 @@
 }
 
 .story-btn button{
-    background-color: rgba(60, 216, 232, 1);
-    color: #F2E8FF;
-    border-radius: 15px;
-    padding: 10px;
-    border: none;
-    margin-left: 35px;
+    background-color: aqua;
+    width: 175px;
+    height: 48px;
+    align-content: center;
+    text-align: center;
+    border-radius: 47px;
+    color: white;
+    position: relative;
+    left: 35px;
+    top: -40px;
 }
 
 .story-1 h2{
@@ -374,7 +382,17 @@
 }
 
 .story2 button{
-    margin-left: 35px;
+    margin-left: 25px;
+    background-color: aqua;
+    width: 155px;
+    height: 38px;
+    align-content: center;
+    text-align: center;
+    border-radius: 47px;
+    color: white;
+    position: relative;
+    left: 5px;
+    top: -30px;
 }
 
 .story2 p{
@@ -417,6 +435,7 @@
     
 }
 
+
 /* footer-section */
 
 .foot-sec{
@@ -454,4 +473,6 @@
     }
 }
 
-
+.hide{
+    
+}
