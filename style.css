@@ -28,19 +28,25 @@
     color: rgba(255, 255, 255, 1);
 }
 
+.f-width{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.back-img{
+    background-image: url("./image/bg.png");
+}
+
+
 /* header-section */
 
 .nav-section{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
-.header-container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 .header-container nav #logo{
     width: 100%;
@@ -56,6 +62,7 @@
 .header-container ul li{
     list-style: none;
     font-size: 1.25rem;
+    font-weight: bold;
 }
 
 .header-container ul li a{
@@ -67,12 +74,13 @@
     padding: 10px 60px ;
     font-size: 1.25rem;
     color: white;
-    border-radius: 10px;
+    border-radius: 12px;
     border: none;
+    font-weight: bold;
 }
 
 #nav-hr{
-    background-color: orange;
+    color: orange;
 }
 .marquee{
     font-size: larger;
@@ -81,7 +89,7 @@
 
 /* responsive nav section*/
 
-@media screen and (max-width:500px    ) {
+@media screen and (max-width: 600px    ) {
     .header-container nav button{
         display: none;
     }
@@ -93,7 +101,7 @@
     }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 
     .header-container i{
         display: none;
@@ -129,12 +137,12 @@
     padding: 15px 60px ;
     font-size: 1.25rem;
     color: white;
-    border-radius: 10px;
+    border-radius: 12px;
     border: none;
 }
 
 /* responsive hero section*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
  .hero-section{
     flex-direction: column-reverse
@@ -148,11 +156,7 @@
 
 /* Standard-Curriculum */
 
-.Curriculum{
-    background-image: url("./image/bg.png");
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 .Curriculum h3{
     padding-top: 60px;
@@ -178,6 +182,7 @@
     background-color: rgba(255, 255, 255, 1); 
     background-image: linear-gradient(180deg, #DEF5FF, #FFFFFF);
     border-radius: 15px;
+    border: 2px solid rgba(222, 245, 255, 1);
 }
 
 .cards-1 img{
@@ -201,16 +206,6 @@
     color: rgba(100, 200, 255, 1);
     border: none;
     background-color: rgba(255, 255, 255, 1);
-    padding-top: 33px;
-    padding-bottom: 52px;
-    
-}
-.cards-1{
-    justify-items: center;
-    padding: 0px 40px;
-    background-color: rgba(255, 255, 255, 1); 
-    background-image: linear-gradient(180deg, #DEF5FF, #FFFFFF);
-    border-radius: 15px;
 }
 
 .cards-2 img{
@@ -234,9 +229,6 @@
     color: rgba(240, 170, 0, 1);
     border: none;
     background-color: rgba(255, 255, 255, 1);
-    padding-top: 33px;
-    padding-bottom: 52px;
-    
 }
 .cards-2{
     justify-items: center;
@@ -244,6 +236,7 @@
     background-color: rgba(255, 255, 255, 1); 
     background-image: linear-gradient(180deg, #FFF4DC, #FFFFFF);
     border-radius: 15px;
+    border: 2px solid rgba(255, 244, 220, 1);
 }
 
 .cards-3 img{
@@ -267,9 +260,6 @@
     color: rgba(135, 0, 255, 1);
     border: none;
     background-color: rgba(255, 255, 255, 1);
-    padding-top: 33px;
-    padding-bottom: 52px;
-    
 }
 
 .cards-3{
@@ -278,6 +268,7 @@
     background-color: #F2E8FF; 
     background-image: linear-gradient(180deg, #F2E8FF, #FFFFFF);
     border-radius: 15px;
+    border: 2px solid rgba(242, 232, 255, 1);
 }
 
 .than-btn{
@@ -287,16 +278,15 @@
 
 .than-btn button{
     border-radius: 50%;
-    padding: 20px;
+    padding: 18px 20px;
     background-color: orange;
     border: none;
     color: #F2E8FF;
 }
 
-
 /* responsive Standard Curriculum */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .Curriculum h3{
         font-size: 2rem;
 
@@ -312,10 +302,9 @@
 
 /* Our-Stories-section */
 
-.our-stories{
-    background-image: url("./image/bg.png");
-    max-width: 1200px;
-    margin: 0 auto;   
+.our-back-img{
+    background-image: url("./image/bg.png"), linear-gradient( #FFFFFF, rgba(237, 196, 123, 1));
+
 }
 
 .stories-card{
@@ -326,14 +315,17 @@
     font-weight: bold;
     font-size: 2.85rem;
     text-align: center;
-    padding-top: 60px;
 }
 
 .story-1{
     width: 540px;
     height: 630px;
-    border: 10px solid rgba(254, 163, 1, 1);
+    border-radius: 16px 16px 16px 16px;
+    background-color: rgb(255, 255, 255);
+}
 
+.story-1 img{
+    border-radius: 16px 16px 0 0;
 }
 
 .story-btn button{
@@ -346,7 +338,8 @@
     color: white;
     position: relative;
     left: 35px;
-    top: -40px;
+    top: -30px;
+    border: none;
 }
 
 .story-1 h2{
@@ -372,18 +365,18 @@
 }
 .story-grid img{
     width: 100%;  
+    border-radius: 16px 16px 0 0;
+
 }
 
 .story2{
-    border-radius: 10px;
-    border: 10px solid black;
-    /* width: 290px;
-    height: 300px; */
+    border-radius: 16px 16px 16px 16px;
+    background-color: rgb(253, 253, 253);
 }
 
 .story2 button{
     margin-left: 25px;
-    background-color: aqua;
+    background-color: rgb(55, 0, 255);
     width: 155px;
     height: 38px;
     align-content: center;
@@ -393,6 +386,7 @@
     position: relative;
     left: 5px;
     top: -30px;
+    border: none;
 }
 
 .story2 p{
@@ -403,7 +397,6 @@
     text-align: center;
     padding-bottom: 60px;
     margin-top: 60px;
-    margin-bottom: 60px;
 }
 
 .our-stories #view{
@@ -417,18 +410,19 @@
 
 /* responsive-our-stories */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
    .story-1{
     display: none;
    } 
    .story-grid{ 
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    margin: 10px;
     }
     
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:600px) {
     .story7{
         display: none;
     }
@@ -439,16 +433,17 @@
 /* footer-section */
 
 .foot-sec{
-    background-color: #273c75;
     display: flex;
     justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 140px;
 }
 
+.footer-back{
+    background-color: #273c75;
+}
 .logo-kids{
     display: flex;
+    align-items: center;
 }
 
 .foot-sec p{
@@ -465,14 +460,18 @@
 
 /* responsive-footer */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .foot-sec{
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px;
+        padding: 20px; 
     }
-}
-
-.hide{
-    
+    .foot-sec p {
+        width: 357px;
+        padding-left: 40px;
+    }
+    .logo-kids {
+        padding-left: 40px;
+        align-items: center;
+    }
 }
